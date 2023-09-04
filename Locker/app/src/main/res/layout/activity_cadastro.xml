@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Cadastro">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/linhas"
+        android:layout_width="808dp"
+        android:layout_height="269dp"
+        android:src="@drawable/linhas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/locker"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:text="LOCKER"
+        android:textColor="@color/amarelo_box"
+        android:textSize="50sp"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="214dp"
+        android:layout_height="60dp"
+        android:text="CADASTRO"
+        android:textColor="@color/branco_letras"
+        android:textSize="40sp"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/imput_email"
+        app:layout_constraintStart_toStartOf="@id/imput_email"
+        app:layout_constraintTop_toBottomOf="@id/locker"
+        android:layout_marginTop="56dp"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/imput_email"
+        style="@style/imputs"
+        android:hint="Email"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locker"
+        android:layout_marginTop="136dp"
+        />
+
+    <EditText
+        android:id="@+id/imput_senha"
+        style="@style/imputs"
+        android:hint="Senha"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_lock"
+        app:layout_constraintEnd_toEndOf="@id/imput_email"
+        app:layout_constraintTop_toBottomOf="@id/imput_email"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/imput_confirmacao_senha"
+        style="@style/imputs"
+        android:hint="Confirmação Senha"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_lock"
+        app:layout_constraintEnd_toEndOf="@id/imput_email"
+        app:layout_constraintTop_toBottomOf="@id/imput_senha"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao"
+        style="@style/botao"
+        android:background="@drawable/botao"
+        app:layout_constraintEnd_toEndOf="@id/imput_confirmacao_senha"
+        app:layout_constraintStart_toStartOf="@id/imput_confirmacao_senha"
+        app:layout_constraintTop_toBottomOf="@id/imput_confirmacao_senha"
+        android:hint="CADASTRAR"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
