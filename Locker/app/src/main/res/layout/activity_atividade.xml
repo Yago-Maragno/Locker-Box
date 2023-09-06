@@ -56,7 +56,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/botao_reservar"
+        android:id="@+id/bt_reservar"
         style="@style/botao"
         android:background="@drawable/botao"
         app:layout_constraintEnd_toEndOf="@id/linhas"
@@ -71,12 +71,12 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/botao_abrir"
+        android:id="@+id/bt_abrir"
         style="@style/botao"
         android:background="@drawable/botao"
         app:layout_constraintEnd_toEndOf="@id/linhas"
         app:layout_constraintStart_toStartOf="@id/linhas"
-        app:layout_constraintTop_toBottomOf="@id/botao_reservar"
+        app:layout_constraintTop_toBottomOf="@id/bt_reservar"
         android:hint="ABRIR"
         android:fontFamily="@font/poppins_thin"
         android:textSize="20sp"

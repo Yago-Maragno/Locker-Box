@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Abrir">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/linhas"
+        android:layout_width="650dp"
+        android:layout_height="225dp"
+        android:src="@drawable/linhas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/locker"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:text="Locker"
+        android:fontFamily="@font/poppins_thin"
+        android:textColor="@color/amarelo_box"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/confirmacao_abrir"
+        android:layout_width="521dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_thin"
+        android:text="Confirmação de Abertura"
+        android:textColor="@color/branco_letras"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/locker"
+        app:layout_constraintStart_toStartOf="@id/linhas"
+        app:layout_constraintTop_toBottomOf="@id/locker" />
+    
+    <TextView
+        android:id="@+id/text_porta"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/confirmacao_abrir"
+        app:layout_constraintTop_toBottomOf="@id/confirmacao_abrir"
+        android:text="Locker"
+        android:textColor="@color/branco_letras"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_thin"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/text_locker"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/locker"
+        app:layout_constraintTop_toBottomOf="@id/confirmacao_abrir"
+        android:text="Porta"
+        android:textColor="@color/branco_letras"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_thin"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="33dp"/>
+
+
+
+    <EditText
+        android:id="@+id/imput_senha"
+        style="@style/imputs"
+        android:hint="Senha"
+        android:fontFamily="@font/poppins_thin"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_lock"
+        app:layout_constraintStart_toStartOf="@id/confirmacao_abrir"
+        app:layout_constraintEnd_toEndOf="@id/confirmacao_abrir"
+        app:layout_constraintTop_toBottomOf="@id/confirm_locker"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_locker"
+        style="@style/botao"
+        android:background="@drawable/botao"
+        app:layout_constraintStart_toStartOf="@id/confirmacao_abrir"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@id/text_porta"
+        android:hint="1"
+        android:fontFamily="@font/poppins_thin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_porta"
+        style="@style/botao"
+        android:background="@drawable/botao"
+        app:layout_constraintEnd_toEndOf="@id/locker"
+        app:layout_constraintStart_toStartOf="@id/locker"
+        app:layout_constraintTop_toBottomOf="@id/text_porta"
+        android:hint="5"
+        android:fontFamily="@font/poppins_thin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginEnd="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_abrir"
+        style="@style/botao"
+        android:background="@drawable/botao"
+        app:layout_constraintEnd_toEndOf="@id/confirmacao_abrir"
+        app:layout_constraintStart_toStartOf="@id/confirmacao_abrir"
+        app:layout_constraintTop_toBottomOf="@id/imput_senha"
+        android:hint="Abrir"
+        android:fontFamily="@font/poppins_thin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

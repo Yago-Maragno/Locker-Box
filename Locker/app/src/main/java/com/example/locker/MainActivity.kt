@@ -35,6 +35,8 @@ import kotlin.math.log
 
 class MainActivity : AppCompatActivity(), EventListenerBleInterface {
 
+
+
     var controller: Mac10Controller? = null
     var isServiceBound: Boolean = false
     //var uuid: String = "52d8bc40-5e09-11ea-bc55-0242ac100090"
@@ -92,6 +94,8 @@ class MainActivity : AppCompatActivity(), EventListenerBleInterface {
             binding.btnOpen5.visibility = View.VISIBLE
         }
     }
+
+
 
     private fun startBluetoothService(locker: LockerHard) {
         Log.i("LOG", "startBluetoothService")

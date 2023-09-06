@@ -93,16 +93,16 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/botao"
+        android:id="@+id/bt_cadastrar"
         style="@style/botao"
         android:background="@drawable/botao"
+        android:fontFamily="@font/poppins_thin"
+        android:hint="CADASTRAR"
+        android:text="CADASTRAR"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/imput_confirmacao_senha"
         app:layout_constraintStart_toStartOf="@id/imput_confirmacao_senha"
-        app:layout_constraintTop_toBottomOf="@id/imput_confirmacao_senha"
-        android:hint="CADASTRAR"
-        android:fontFamily="@font/poppins_thin"
-        android:textStyle="bold"
-        />
+        app:layout_constraintTop_toBottomOf="@id/imput_confirmacao_senha" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"

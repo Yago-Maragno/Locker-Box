@@ -83,7 +83,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/botao"
+        android:id="@+id/bt_login"
         style="@style/botao"
         android:background="@drawable/botao"
         app:layout_constraintEnd_toEndOf="@id/imput_senha"
@@ -97,12 +97,12 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/botao_cadastra_se"
+        android:id="@+id/bt_cadastra_se"
         style="@style/botao"
         android:background="@drawable/botao"
         app:layout_constraintEnd_toEndOf="@id/imput_senha"
         app:layout_constraintStart_toStartOf="@id/imput_senha"
-        app:layout_constraintTop_toBottomOf="@id/botao"
+        app:layout_constraintTop_toBottomOf="@id/bt_login"
         android:hint="CADASTRAR"
         android:fontFamily="@font/poppins_thin"
         android:textStyle="bold"
